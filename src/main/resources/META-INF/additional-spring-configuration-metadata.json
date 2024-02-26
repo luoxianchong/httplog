@@ -1,0 +1,31 @@
+{
+  "groups": [
+    {
+      "name": "http.log",
+      "type": "org.ing.HttpLogProperties",
+      "sourceType": "org.ing.HttpLogProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "http.log.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.ing.HttpLogProperties",
+      "defaultValue": false,
+      "description": "是否启用Http请求日志"
+    },
+    {
+      "name": "http.log.exclude-url-patterns",
+      "type": "java.lang.String[]",
+      "sourceType": "org.ing.HttpLogProperties",
+      "description": "排除uri匹配规则集合，使用AntPathMatcher为匹配器"
+    },
+    {
+      "name": "http.log.url-patterns",
+      "type": "java.lang.String[]",
+      "sourceType": "org.ing.HttpLogProperties",
+      "description": "包含uri匹配规则集合，使用AntPathMatcher为匹配器"
+    }
+  ],
+  "hints": []
+}
